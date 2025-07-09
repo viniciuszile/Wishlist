@@ -1,0 +1,248 @@
+.filtro-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8faaff;
+  color: #121214;
+  border: none;
+  padding: 12px 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 0 12px #5a5a7a;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.menu-flutuante {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #2a2a38;
+  border-radius: 12px;
+  padding: 16px;
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 14px #000;
+  animation: slide-up 0.3s ease;
+}
+
+.menu-flutuante h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.menu-flutuante button {
+  background-color: #3a3a4d;
+  color: #ccc;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.menu-flutuante button:hover {
+  background-color: #4b4b5a;
+  color: #fff;
+}
+
+.menu-flutuante button.ativo {
+  background-color: #8faaff;
+  color: #121214;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Container que agrupa todos os cards */
+.container_card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 40px;
+  background-color: #121214; /* fundo dark geral */
+  min-height: 100vh;
+  perspective: 1200px; /* perspectiva para efeito 3D */
+}
+
+/* Estilo base do card */
+.card {
+  width: 280px;
+  height: 410px;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  background-color: #1f1f23;
+}
+
+/* Frente e verso do card */
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* Frente do card */
+.card-front {
+  background: linear-gradient(145deg, #1f1f23, #29292f);
+  color: #fff;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: inset 0 0 15px #0d0d10;
+  position: relative;
+}
+
+.card-front img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Plataforma no bottom centralizado */
+.plataforma {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  background-color: #3a3a4d;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #5a5a7a;
+  color: #c9c9ff;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
+
+/* Verso do card */
+.card-back {
+  background: linear-gradient(145deg, #29292f, #1f1f23);
+  color: #ddd;
+  transform: rotateY(180deg);
+  justify-content: center;
+  text-align: left;
+  box-shadow: inset 0 0 15px #0a0a0e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-top: 40px;
+}
+
+.card-back p {
+  margin-bottom: 12px;
+}
+
+.card-back strong {
+  color: #8faaff;
+}
+
+/* Flip ativado */
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Card com jogo concluído */
+.card.concluido {
+  border: 2px solid #00ff88;
+  box-shadow: 0 0 12px #00ff88;
+}
+
+/* Card com jogo não concluído */
+.card.nao-concluido {
+  border: 2px solid #ff5555;
+  box-shadow: 0 0 12px #ff5555;
+}
+
+/* --- Responsividade --- */
+
+/* Tablets e pequenos laptops */
+@media (max-width: 768px) {
+  .container_card {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .card {
+    width: 220px;
+    height: 300px;
+  }
+
+  .card-front img {
+    height: 180px;
+    margin-bottom: 30px;
+  }
+
+  .plataforma {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+
+  .card-back {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container_card {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+    height: auto; /* para ajustar a altura automática */
+    aspect-ratio: 280 / 380;
+  }
+
+  .card-front img {
+    height: auto;
+    max-height: 290px;
+    margin-bottom: 30px;
+  }
+
+  .plataforma {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+    max-width: 80%;
+  }
+
+  .card-back {
+    font-size: 0.85rem;
+    padding-top: 20px;
+  }
+}
