@@ -25,7 +25,7 @@
     "nome": "Little Nightmares II",
     "comprado": "não",
     "prioridade": "média",
-    "plataforma": "Game Pass / Steam"
+    "plataforma": "Game Pass"
   },
   {
     "link": "https://raw.githubusercontent.com/viniciuszile/Wishlist/refs/heads/main/Data/Assets/Resident_Evil_Revelations_2.png",
@@ -39,7 +39,7 @@
     "nome": "Undertale",
     "comprado": "sim",
     "prioridade": "média",
-    "plataforma": "Steam / Switch"
+    "plataforma": "Switch"
   },
   {
     "link": "https://raw.githubusercontent.com/viniciuszile/Wishlist/refs/heads/main/Data/Assets/BioShock_Remastered.png",
@@ -88,7 +88,7 @@
     "nome": "Hotline Miami 2: Wrong Number",
     "comprado": "não",
     "prioridade": "alta",
-    "plataforma": "Steam / Switch"
+    "plataforma": "Steam"
   },
   {
     "link": "https://raw.githubusercontent.com/viniciuszile/Wishlist/refs/heads/main/Data/Assets/Dragon_Ball_Sparking_ZERO.png",
@@ -109,7 +109,7 @@
     "nome": "Clair Obscur: Expedition 33",
     "comprado": "não",
     "prioridade": "alta",
-    "plataforma": "Game Pass / Steam"
+    "plataforma": "Game Pass"
   },
   {
     "link": "https://raw.githubusercontent.com/viniciuszile/Wishlist/refs/heads/main/Data/Assets/Blue_Prince.png",
@@ -130,7 +130,7 @@
     "nome": "MULLET MADJACK",
     "comprado": "não",
     "prioridade": "baixa",
-    "plataforma": "Steam / Game Pass"
+    "plataforma": "Game Pass"
   },
   {
     "link": "https://raw.githubusercontent.com/viniciuszile/Wishlist/refs/heads/main/Data/Assets/OneShot.png",
@@ -144,14 +144,14 @@
     "nome": "Katana ZERO",
     "comprado": "não",
     "prioridade": "baixa",
-    "plataforma": "Steam / Switch"
+    "plataforma": "Switch"
   },
   {
     "link": "https://raw.githubusercontent.com/viniciuszile/Wishlist/refs/heads/main/Data/Assets/Firewatch.png",
     "nome": "Firewatch",
     "comprado": "não",
     "prioridade": "baixa",
-    "plataforma": "Steam / Game Pass"
+    "plataforma": "Steam"
   },
   {
     "link": "https://raw.githubusercontent.com/viniciuszile/Wishlist/refs/heads/main/Data/Assets/Prince_of_Persia_The_Lost_Crown.png",
@@ -200,7 +200,7 @@
     "nome": "DAVE THE DIVER",
     "comprado": "não",
     "prioridade": "baixa",
-    "plataforma": "Steam / Switch"
+    "plataforma": "Switch"
   },
   {
     "link": "https://raw.githubusercontent.com/viniciuszile/Wishlist/refs/heads/main/Data/Assets/Resident_Evil.png",
@@ -235,13 +235,13 @@
     "nome": "Dead Space (Remake)",
     "comprado": "não",
     "prioridade": "baixa",
-    "plataforma": "Steam / Game Pass"
+    "plataforma": "Game Pass"
   },
   {
     "link": "https://raw.githubusercontent.com/viniciuszile/Wishlist/refs/heads/main/Data/Assets/Indiana_Jones_and_the_Great_Circle.png",
     "nome": "Indiana Jones and the Great Circle",
     "comprado": "não",
     "prioridade": "baixa",
-    "plataforma": "Steam / Game Pass"
+    "plataforma": "Game Pass"
   }
 ]
